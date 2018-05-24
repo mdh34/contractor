@@ -1,5 +1,4 @@
-executable(
-    meson.project_name(),
+files = files(
     'main.vala',
     'Application.vala',
     'Contract.vala',
@@ -15,7 +14,12 @@ executable(
     'GenericContract.vala',
     'MimeTypeManager.vala',
     'String.vala',
-    'Translations.vala',
+    'Translations.vala'
+)
+
+executable(
+    meson.project_name(),
+    files,
    
     
     dependencies: [
