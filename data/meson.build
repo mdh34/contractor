@@ -9,5 +9,3 @@ configure_file(
     configuration: conf_data,
     install_dir: dbus.get_pkgconfig_variable('session_bus_services_dir')
 )
-
-
